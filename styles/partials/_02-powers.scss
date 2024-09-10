@@ -83,6 +83,7 @@
     }
 
     @media (max-width: $forMobile) {
+      padding: 30px;
       grid-column: unset;
     }
   }
@@ -95,5 +96,9 @@
 
   &__banner-image {
     margin-left: auto;
+
+    @media (max-width: $forMobile) {
+      display: none;
+    }
   }
 }

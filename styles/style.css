@@ -524,6 +524,7 @@ button {
 }
 @media (max-width: 768px) {
   .powers__banner {
+    padding: 30px;
     grid-column: unset;
   }
 }
@@ -534,6 +535,11 @@ button {
 }
 .powers__banner-image {
   margin-left: auto;
+}
+@media (max-width: 768px) {
+  .powers__banner-image {
+    display: none;
+  }
 }
 
 .why__content {
