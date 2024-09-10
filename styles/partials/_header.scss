@@ -1,0 +1,96 @@
+.header {
+  padding: 40px 0;
+  background-color: #151626;
+  position: relative;
+
+  &__content {}
+
+  &__row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    color: white;
+    font-size: 24px;
+    font-weight: 600;
+
+    span {
+      color: #00D4CA;
+      font-style: italic;
+    }
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+
+      @media (max-width: $forTablet) {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    a {
+      font-size: 16px;
+    }
+
+    a:hover {
+      color: #6740EB;
+    }
+
+    @media (max-width: $forTablet) {
+      display: grid;
+      grid-template-rows: 0fr;
+      transition: 0.6s;
+
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      z-index: 99;
+
+      background-color: #151626;
+    }
+
+    &.active {
+      grid-template-rows: 1fr;
+      padding-top: 40px;
+      padding-bottom: 80px;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 24px;
+    height: 24px;
+
+    @media (min-width: $forTablet) {
+      display: none;
+    }
+
+    img[src$="closed.svg"] {
+      display: block;
+    }
+
+    img[src$="opened.svg"] {
+      display: none;
+    }
+
+    &.active {
+      img[src$="closed.svg"] {
+        display: none;
+      }
+
+      img[src$="opened.svg"] {
+        display: block;
+      }
+    }
+  }
+}

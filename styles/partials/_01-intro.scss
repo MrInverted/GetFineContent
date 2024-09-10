@@ -1,0 +1,96 @@
+.intro {
+  padding-top: 100px - 40px;
+  padding-bottom: 100px;
+  background-color: #151626;
+
+  @media (max-width: $forMobile) {
+    padding-bottom: 180px;
+    padding-top: 40px;
+  }
+
+  &__content {
+    h1 {
+      text-align: center;
+      text-wrap: balance;
+    }
+  }
+
+  &__image {
+    max-width: 1920px;
+    margin: 20px auto;
+
+    img {
+      width: 100%;
+    }
+
+    @media (max-width: $forMobile) {
+      height: 420px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+
+    @media (max-width: $forTablet) {
+      flex-direction: column;
+    }
+
+    @media (max-width: $forMobile) {
+      gap: 8px;
+    }
+  }
+
+  &__row-left {
+    flex: 0 1 480px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    h2 {
+      margin-bottom: 8px;
+    }
+
+    @media (max-width: $forTablet) {
+      flex: unset;
+    }
+
+    @media (max-width: $forMobile) {
+      gap: 8px;
+    }
+  }
+
+  &__row-right {
+    flex: 0 1 580px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+
+    .button {
+      margin-top: 8px;
+    }
+
+    @media (max-width: $forTablet) {
+      flex: unset;
+    }
+
+    @media (max-width: $forMobile) {
+      gap: 8px;
+
+      .button {
+        width: 100%;
+        margin-top: 40px - 8px;
+      }
+    }
+  }
+}

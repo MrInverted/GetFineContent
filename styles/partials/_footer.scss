@@ -1,0 +1,146 @@
+.footer {
+  background-color: #151626;
+
+  padding-top: 20px;
+  margin-top: 80px;
+
+  @media (max-width: $forTablet) {
+    margin-top: 70px;
+  }
+
+  @media (max-width: $forMobile) {
+    margin-top: 60px;
+  }
+
+  &__content {}
+
+  &__top {
+    padding: 60px 0;
+    border-bottom: 1px solid #D6D6D6;
+
+    p {
+      font-size: 24px;
+      font-weight: 500;
+
+      @media (max-width: $forTablet) {
+        font-size: 22px;
+      }
+
+      @media (max-width: $forMobile) {
+        font-size: 20px;
+      }
+    }
+
+    a {
+      font-size: 36px;
+      font-weight: 500;
+      color: white;
+
+      @media (max-width: $forTablet) {
+        font-size: 32px;
+      }
+
+      @media (max-width: $forMobile) {
+        font-size: 28px;
+      }
+    }
+  }
+
+  &__top-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+
+    @media (max-width: $forTablet) {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    a:hover span:first-child {
+      color: #6740EB;
+      text-decoration: underline;
+    }
+
+    @media (max-width: $forTablet) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+
+      a span:last-child {
+        display: none;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+
+      @media (max-width: $forMobile) {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+
+    li:not(:last-child)::after {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 6px;
+      background-color: #D6D6D6;
+
+      margin-left: 12px;
+      vertical-align: super;
+    }
+
+    li::after {
+      @media (max-width: $forMobile) {
+        display: none !important;
+      }
+    }
+
+    a:hover {
+      color: #6740EB;
+      text-decoration: underline;
+    }
+
+    @media (max-width: $forTablet) {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+
+  &__bottom {
+    padding: 40px 0;
+    text-align: center;
+
+    footer-logo {
+      font-size: 24px;
+      font-weight: 600;
+      color: white;
+
+      span {
+        font-style: italic;
+      }
+    }
+  }
+}

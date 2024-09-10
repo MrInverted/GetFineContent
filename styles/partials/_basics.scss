@@ -1,0 +1,156 @@
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #D6D6D6;
+  background-color: #1C1E33;
+
+  @media (max-width: $forMobile) {
+    font-size: 16px;
+  }
+}
+
+content-container {
+  display: block;
+  width: 100%;
+  max-width: 1180px + 40px;
+  padding: 0 20px;
+  margin: 0 auto;
+
+  @media (max-width: $forTablet) {
+    max-width: $forMobile;
+  }
+
+  @media (max-width: $forMobile) {
+    max-width: $minimum;
+  }
+}
+
+hidden-content {
+  display: block;
+  min-height: 0;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: white;
+
+  span {
+    color: #00D4CA;
+  }
+
+  @media (max-width: $forTablet) {
+    font-size: 50px;
+  }
+
+  @media (max-width: $forMobile) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 1.2;
+  color: white;
+
+  @media (max-width: $forTablet) {
+    font-size: 32px;
+  }
+
+  @media (max-width: $forMobile) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: white;
+
+  @media (max-width: $forTablet) {
+    font-size: 22px;
+  }
+
+  @media (max-width: $forMobile) {
+    font-size: 20px;
+  }
+}
+
+hgroup {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  text-align: center;
+  max-width: 780px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+
+  @media (max-width: $forTablet) {
+    margin-bottom: 70px;
+  }
+
+  @media (max-width: $forMobile) {
+    margin-bottom: 60px;
+  }
+}
+
+section {
+  padding: 80px 0;
+
+  @media (max-width: $forTablet) {
+    padding: 70px 0;
+  }
+
+  @media (max-width: $forMobile) {
+    padding: 60px 0;
+  }
+}
+
+
+.button {
+  display: inline-block;
+  padding: 18px 32px;
+  background-color: #6740EB;
+  border-radius: 10px;
+
+  color: white;
+  font-size: 20px;
+
+  transition: 0.2s;
+
+  @media (max-width: $forMobile) {
+    font-size: 18px;
+  }
+}
+
+.button:hover {
+  background-color: #3F18C3;
+}
+
+.button-with-arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+
+  width: fit-content;
+
+  img {
+    transition: 0.2s;
+  }
+}
+
+.button-with-arrow:hover img {
+  transform: translateX(4px);
+}
+
+button {
+  color: inherit;
+  font-size: inherit;
+}

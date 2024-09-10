@@ -1,0 +1,14 @@
+$forTablet : 1220px; // 1180 + 40
+$forMobile : 768px;
+$minimum : 400px;
+
+
+@import "./partials/nullstyle";
+@import "./partials/basics";
+@import "./partials/header";
+@import "./partials/01-intro";
+@import "./partials/02-powers";
+@import "./partials/03-why";
+@import "./partials/04-cases";
+@import "./partials/05-form";
+@import "./partials/footer";
