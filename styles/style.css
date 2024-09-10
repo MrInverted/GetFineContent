@@ -618,6 +618,7 @@ button {
 }
 @media (max-width: 768px) {
   .why__banner {
+    grid-column: unset;
     padding: 30px;
     flex-direction: column;
     align-items: stretch;
@@ -781,10 +782,12 @@ button {
 }
 .form__content input::-moz-placeholder, .form__content textarea::-moz-placeholder {
   color: inherit;
+  opacity: 0.4;
 }
 .form__content input::placeholder,
 .form__content textarea::placeholder {
   color: inherit;
+  opacity: 0.4;
 }
 .form__content textarea {
   resize: vertical;
